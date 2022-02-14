@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Hypersthetic</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <a href="/">HyperSthetic</a>
+        </h1>
+    </header>
+     <!-- Side navigation -->
+    <header class="sidenav"> 
+         <div id="history">
+            <div class="historyHeader">
+                <h2>Recent Searches</h2>
+            </div>
+            <div>
+                <ul id="searchList"><!--This is where search history goes--></ul>
+            </div>
+        </div>
+    </header>
+    <form>
+        <div class="mainIdea">
+            <h2>🎼  Album Covers & Lyrics </h2>
+            <h3>Search for your favorite musical artist's album covers and song lyrics on one site.
+                Experience the inspiring designs and words as you listen to your sought out artist.</h3> 
+        </div>
+        <div class="inputs">
+            <div class="container first">
+                <h2>Search lyric</h2>
+                <form id="form" >
+                    <input type="text" id="search" placeholder="Enter artist name or song title...">
+                    <button class="btn" id="searchButton">Search</button>
+                </form>
+            </div>
+            
+            <!-- Franklin's
+                <div class="first">
+                <input type="text" id="artistSearch" placeholder="Search an artist">
+                <input type="text" id="songSearch" placeholder="Search a song">
+                <button class="btn" id="searchButton">Find</button>
+            </div> -->
+        </div>
+    </form> 
+
+    <main>
+        <div class="musicBox">
+            <div class="result" id="result">
+                <h3>Search results</h3>                
+            </div>
+            <div class="square">
+                <div id="albumCover">
+                    <!-- This is for the album art -->
+                    <img src="../../../plant photos/004.png">
+                </div>
+            </div>
+            <div id="musicAndLyrics">
+                <div>
+                    <!-- Song Title -->
+                    <h3 id="songTitle">Lyrics</h3>
+                </div>
+                <!-- Lyrics -->
+                <div id="lyrics">
+                    <p>these are the lyrics? Lorem ipsum dolor 
+                        sit amet consectetur adipisicing elit. 
+                        Tempore, ab doloremque, odit esse eos 
+                        provident voluptate quisquam mollitia 
+                        dolorem incidunt cum voluptates earum. 
+                        Necessitatibus repellendus ex molestiae 
+                        distinctio modi aliquid, natus architecto 
+                        sint eveniet nemo expedita doloribus harum 
+                        sunt temporibus quam? Assumenda deleniti 
+                        doloribus id consequuntur officiis? Libero, 
+                        a. Distinctio?</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h4> For Music Lovers </h4>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+            crossorigin="anonymous"></script>
+    <script src="./assets/js/franklin_script.js"></script>
+</body>
+</html>
