@@ -1,0 +1,191 @@
+body {
+    background-color: grey;
+    background: url(../image.png) no-repeat center grey;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: fantasy;
+    font-variant: small-caps;
+    font-size: 110px;
+}
+
+h2 {
+    color: lightgray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h3 {
+    color: lightgrey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h4 {
+    color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: white;
+    font-style: normal;
+    text-decoration: none;
+}
+
+a:hover {
+    transition: 1s;
+    color: orangered;
+}
+
+a:visited {
+    color: white;
+    font-style: normal;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header h1 {
+    max-width: 40%;
+    display: flex;
+    border-bottom: orangered 2px solid;
+}
+
+p {
+    font-size: 16px;
+    color: white;
+}
+
+form {
+    margin: 20px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+button {
+    background: lightgrey;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    width: 40%;
+}
+
+button:hover {
+    background: darkgray;
+    color: white;
+    transition: 0.4s;
+}
+
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    float: right;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    color: black;
+}
+
+.sidenav h2 {
+    color: black;
+    font-size: large;
+}
+
+#history {
+    background: lightgray;
+    opacity: 0.5;
+    color: black;
+    float: right;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.historyHeader {
+    width: 60%;
+    border-bottom: orangered;
+}
+
+#searchList {
+    list-style-type: none;
+    width: 100%;
+}
+
+.listing {
+    color: black;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainIdea {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+main {
+    display: flex;
+
+}
+
+input {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    border: none;
+    height: 25px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 3px;
+}
+
+.musicBox {
+    display: flex;
+    justify-content: space-around;
+    max-width: 73%;
+    border-top: 2px orangered solid;
+    padding: 15px;
+}
+
+.square {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+#musicAndLyrics {
+    display: flex;
+    width: 33%;
+    flex-direction: column;
+}
+
+.result {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.result ul li {
+    color: white;
+}
