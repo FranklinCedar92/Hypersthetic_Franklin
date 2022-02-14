@@ -1,19 +1,19 @@
 var userFormEl = document.querySelector("#form");
-    var inputEl = document.querySelector("#input");
-        var resultsEl = document.querySelector("#results");
-            var modalEl = document.querySelector("#modal");
-                var closeEl = document.querySelector("#close");
-                    var clearEl = document.querySelector("#clear");
-                        var storageEl = [];
+var inputEl = document.querySelector("#input");
+var resultsEl = document.querySelector("#results");
+var modalEl = document.querySelector("#modal");
+var closeEl = document.querySelector("#close");
+var clearEl = document.querySelector("#clear");
+var storageEl = [];
 
 // Variable to input //
 
 var inputHandler = function(event) {
     event.preventDefault();
-        var inputVal = inputEl.value.trim();
-            if (inputVal) {
-                api(inputVal);
-                    inputEl.value = "";
+    var inputVal = inputEl.value.trim();
+    if (inputVal) {
+        api(inputVal);
+        inputEl.value = "";
 	
     } else {modalEl.classList.add("is-active");}
 };
@@ -56,18 +56,18 @@ var api = function(val) {
 
 var displayRes = function(apiData) {
 	var list = document.createElement("div");
-	        list.setAttribute("id", "resList");
-                resultsEl.append(list);
+	list.setAttribute("id", "resList");
+    resultsEl.append(list);
 
-                    for (var i = 0; i < apiData.response.hits.length; i++) {
-                        var resItem = document.createElement("a");
-                            console.log(apiData.response.hits[i])
-                                resItem.innerHTML = apiData.response.hits[i].result.title 
-                                    resItem.className = "res";
-                                        resItem.setAttribute("href", apiData.response.hits[i].result.url);
-                                            resItem.setAttribute("target", "_blank");
-                                                list.append(resItem);
-            }
+    for (var i = 0; i < apiData.response.hits.length; i++) {
+        var resItem = document.createElement("a");
+        console.log(apiData.response.hits[i]);
+        resItem.innerHTML = apiData.response.hits[i].result.title 
+        resItem.className = "res";
+        resItem.setAttribute("href", apiData.response.hits[i].result.url);
+        resItem.setAttribute("target", "_blank");
+        list.append(resItem);
+    }
 };
 
 // Handler //
