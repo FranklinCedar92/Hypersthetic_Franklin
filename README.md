@@ -9,7 +9,7 @@ Hamed: APIs in deezer script.js and genius tracks.js (album art)
 deployed application: https://franklincedar92.github.io/Hypersthetic_Franklin/
 
 # Screenshots
-screenshots: ./assets/Hypersthetic.png , ./assets/Hypersthetic_end.png
+screenshots: ./assets/Lana.png , ./assets/Lana2.png
 
 # Technologies used
 jquery
