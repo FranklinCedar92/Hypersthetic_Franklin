@@ -2,6 +2,7 @@
 const button = document.getElementById('searchButton')
 const search = document.getElementById('search')
 const result = document.getElementById('result')
+const lyrics = document.getElementById('lyrics')
 
 
 const apiURL = 'https://api.lyrics.ovh';
@@ -29,7 +30,7 @@ async function searchSong(searchValue){
     const searchResult = await fetch(`${apiURL}/suggest/${searchValue}`)
     const data = await searchResult.json();
 
-    //console.log(data);
+    console.log(data);
     showData(data);
 }
 
@@ -50,7 +51,9 @@ function showData(data){
         .join('')}
     </ul>
   `;
-  document.getElementById('result').innerHTML = ''
+  //document.getElementById('result').innerHTML = ''
+
+  console.log(result.innerHTML);
 
 
 }
