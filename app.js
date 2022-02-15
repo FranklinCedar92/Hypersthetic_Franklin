@@ -1,13 +1,14 @@
 
-const form = document.getElementById('form')
+const button = document.getElementById('searchButton')
 const search = document.getElementById('search')
 const result = document.getElementById('result')
 
 
 const apiURL = 'https://api.lyrics.ovh';
 
-form.addEventListener('submit', e=> {
+button.addEventListener('click', e=> {
     e.preventDefault();
+    //console.log("this works"); //this works
     searchValue = search.value.trim();
 
     if(!searchValue){
@@ -15,27 +16,28 @@ form.addEventListener('submit', e=> {
     }
     else{ 
         searchSong(searchValue)
+        // console.log("this works"); //this works
     }
 })
 
-const searchOnKeyUp =() =>{
-    searchValue = search.value.trim();
-    searchSong(searchValue)
-}
+//const searchOnKeyUp =() =>{
+  //  searchValue = search.value.trim();
+    //searchSong(searchValue)
+//}
 
 async function searchSong(searchValue){
     const searchResult = await fetch(`${apiURL}/suggest/${searchValue}`)
     const data = await searchResult.json();
 
-    
+    //console.log(data);
     showData(data);
 }
 
 
 function showData(data){
-  
+    console.log("this works");
     result.innerHTML = `
-   
+
     <ul class="song-list">
       ${data.data
         .map(song=> `<li>
